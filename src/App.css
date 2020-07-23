@@ -1,0 +1,72 @@
+body {
+  height: 100vh;
+}
+
+.board {
+  border: 0.5rem solid #ff652f;
+  background: #ff652f;
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.squares {
+  background: #f3eeee;
+  border: none;
+  font-weight: bold;
+
+  font-size: 3.5rem;
+  /* font-weight: 800; */
+  cursor: pointer;
+  outline: none;
+}
+
+.timer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #888;
+}
+
+.timer-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.center-align {
+  display: flex;
+  justify-content: center;
+}
+
+.active {
+  font-weight: bold;
+  background-color: rgb(220, 252, 217);
+}
+
+.winner {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin: 0 4rem;
+}
+
+.hide {
+  color: white;
+}
+.unhide {
+  color: black;
+}
